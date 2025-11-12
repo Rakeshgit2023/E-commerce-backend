@@ -1,16 +1,16 @@
 import express from "express";
 import dotenv from "dotenv";
 import cors from "cors";
-import { DbConnect } from "./src/database/dbconnect.js";
-import { errorMiddleware } from "./src/middlewares/ErrorMiddleWare.js";
+import { DbConnect } from "./database/dbconnect.js";
+import { errorMiddleware } from "./middlewares/ErrorMiddleWare.js";
 
 // Import routes
-import authRoutes from "./src/routes/Auth.js";
-import productRoutes from "./src/routes/Product.js";
-import orderRoutes from "./src/routes/Order.js";
-import userRoutes from "./src/routes/User.js";
-import categoryRoutes from "./src/routes/Category.js";
-import cartRoutes from "./src/routes/Cart.js";
+import authRoutes from "./routes/Auth.js";
+import productRoutes from "./routes/Product.js";
+import orderRoutes from "./routes/Order.js";
+import userRoutes from "./routes/User.js";
+import categoryRoutes from "./routes/Category.js";
+import cartRoutes from "./routes/Cart.js";
 dotenv.config();
 const app = express();
 
